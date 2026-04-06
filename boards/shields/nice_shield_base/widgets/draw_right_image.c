@@ -16,7 +16,7 @@ LV_IMG_DECLARE(InoShirt11);
 LV_IMG_DECLARE(InoShirt12);
 LV_IMG_DECLARE(InoShirt13);
 LV_IMG_DECLARE(InoShirt14);
-
+/*
 const lv_img_dsc_t *anim_imgs[] = {
     &InoShirt01,
     &InoShirt02,
@@ -33,7 +33,7 @@ const lv_img_dsc_t *anim_imgs[] = {
     &InoShirt13,
     &InoShirt14,
 };
-
+*/
 void draw_right_image(lv_obj_t *canvas) {
     lv_obj_t *art = lv_img_create(canvas);
 
