@@ -39,20 +39,15 @@ void draw_right_animation(lv_obj_t *canvas) {
     lv_obj_t *art = lv_animimg_create(canvas);
     lv_obj_center(art);
 
-    /*_animimg_set_src(art, (const void **)anim_imgs, 14);
+    lv_animimg_set_src(art, (const void **)anim_imgs, 14);
     lv_animimg_set_duration(art, CONFIG_NICE_RIGHT_ANIMATION_MS);
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);
-    lv_animimg_start(art);*/
-    lv_obj_t * art = lv_animimg_create(widget->obj);            //<--
-    lv_obj_center(art);                                         //<--
-    lv_animimg_set_src(art, (const void **) anim_imgs, 14);     //<--
-    lv_animimg_set_duration(art, CONFIG_CUSTOM_ANIMATION_SPEED);//<--
-    lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);  //<--
-    lv_animimg_start(art);                                      //<--
+    lv_animimg_start(art);
+    
 #else
     lv_obj_t *art = lv_img_create(canvas);
 
-    lv_img_set_src(art, &InoShirt14);
+    lv_img_set_src(art, &InoShirt01);
 #endif
 
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
