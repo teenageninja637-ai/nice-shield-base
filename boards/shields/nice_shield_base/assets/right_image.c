@@ -8,8 +8,8 @@
 #define LV_ATTRIBUTE_IMG_InoShirt14
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_RIGHT_IMAGE uint8_t
-    right_image_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_InoShirt14 uint8_t
+    InoShirt14_map[] = {
 #if CONFIG_NICE_VIEW_WIDGET_INVERTED
         0x00, 0x00, 0x00, 0xff, /*Color of index 0*/
         0xff, 0xff, 0xff, 0xff, /*Color of index 1*/
