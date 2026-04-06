@@ -2,10 +2,36 @@
 #include <zephyr/kernel.h>
 #include "right_animation.h"
 
-LV_IMG_DECLARE(right_image);
+LV_IMG_DECLARE(InoShirt01);
+LV_IMG_DECLARE(InoShirt02);
+LV_IMG_DECLARE(InoShirt03);
+LV_IMG_DECLARE(InoShirt04);
+LV_IMG_DECLARE(InoShirt05);
+LV_IMG_DECLARE(InoShirt06);
+LV_IMG_DECLARE(InoShirt07);
+LV_IMG_DECLARE(InoShirt08);
+LV_IMG_DECLARE(InoShirt09);
+LV_IMG_DECLARE(InoShirt10);
+LV_IMG_DECLARE(InoShirt11);
+LV_IMG_DECLARE(InoShirt12);
+LV_IMG_DECLARE(InoShirt13);
+LV_IMG_DECLARE(InoShirt14);
 
 const lv_img_dsc_t *anim_imgs[] = {
-    &right_image,
+    &InoShirt01,
+    &InoShirt02,
+    &InoShirt03,
+    &InoShirt04,
+    &InoShirt05,
+    &InoShirt06,
+    &InoShirt07,
+    &InoShirt08,
+    &InoShirt09,
+    &InoShirt10,
+    &InoShirt11,
+    &InoShirt12,
+    &InoShirt13,
+    &InoShirt14,
 };
 
 void draw_right_animation(lv_obj_t *canvas) {
@@ -13,7 +39,7 @@ void draw_right_animation(lv_obj_t *canvas) {
     lv_obj_t *art = lv_animimg_create(canvas);
     lv_obj_center(art);
 
-    lv_animimg_set_src(art, (const void **)anim_imgs, 16);
+    lv_animimg_set_src(art, (const void **)anim_imgs, 14);
     lv_animimg_set_duration(art, CONFIG_NICE_RIGHT_ANIMATION_MS);
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);
     lv_animimg_start(art);
