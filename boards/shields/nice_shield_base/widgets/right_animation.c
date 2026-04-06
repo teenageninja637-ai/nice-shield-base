@@ -35,7 +35,7 @@ const lv_img_dsc_t *anim_imgs[] = {
 };
 
 void draw_right_animation(lv_obj_t *canvas) {
-#if IS_ENABLED(CONFIG_NICE_RIGHT_ANIMATION)
+int IS_ENABLED(CONFIG_NICE_RIGHT_ANIMATION)
     lv_obj_t *art = lv_animimg_create(canvas);
     lv_obj_center(art);
 
@@ -43,9 +43,13 @@ void draw_right_animation(lv_obj_t *canvas) {
     lv_animimg_set_duration(art, CONFIG_NICE_RIGHT_ANIMATION_MS);
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);
     lv_animimg_start(art);
-#endif
-
+    
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
+    sys_slist_append(&widgets, &widget->node);
+    widget_battery_status_init();
+    widget_peripheral_status_init();
+
+    return 0;
 }
 /* Next function from urchin peripheral
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
