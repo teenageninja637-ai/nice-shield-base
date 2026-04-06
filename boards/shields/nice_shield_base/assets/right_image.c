@@ -103,8 +103,8 @@ const lv_img_dsc_t right_image = {
     .header.cf = LV_IMG_CF_INDEXED_1BIT,
     .header.always_zero = 0,
     .header.reserved = 0,
-    .header.w = 80,
-    .header.h = 69,
-    .data_size = 620,
+    .header.w = 140,
+    .header.h = 68,
+    .data_size = 1224,
     .data = right_image_map,
 };
