@@ -2,12 +2,12 @@
 #include <zephyr/kernel.h>
 #include "draw_right_image.h"
 
-LV_IMG_DECLARE(right_image);
+LV_IMG_DECLARE(InoShirt14);
 
 void draw_right_image(lv_obj_t *canvas) {
     lv_obj_t *art = lv_img_create(canvas);
 
-    lv_img_set_src(art, &right_image);
+    lv_img_set_src(art, &InoShirt14);
 
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
 }

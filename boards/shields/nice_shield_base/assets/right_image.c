@@ -4,8 +4,8 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_RIGHT_IMAGE
-#define LV_ATTRIBUTE_IMG_RIGHT_IMAGE
+#ifndef LV_ATTRIBUTE_IMG_InoShirt14
+#define LV_ATTRIBUTE_IMG_InoShirt14
 #endif
 
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_RIGHT_IMAGE uint8_t
@@ -99,12 +99,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_RIGHT_IMA
   // END
 };
 
-const lv_img_dsc_t right_image = {
+const lv_img_dsc_t InoShirt14 = {
     .header.cf = LV_IMG_CF_INDEXED_1BIT,
     .header.always_zero = 0,
     .header.reserved = 0,
     .header.w = 140,
     .header.h = 68,
     .data_size = 1224,
-    .data = right_image_map,
+    .data = InoShirt14_map,
 };
